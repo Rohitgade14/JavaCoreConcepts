@@ -1,7 +1,7 @@
 package com.comparator;
 
 public class Employee {
-    private int empId;
+    private Integer empId;
     private  String name;
     private Double salary;
     private String email;
@@ -13,11 +13,11 @@ public class Employee {
         this.email = email;
     }
 
-    public int getEmpId() {
+    public Integer getEmpId() {
         return empId;
     }
 
-    public void setEmpId(int empId) {
+    public void setEmpId(Integer empId) {
         this.empId = empId;
     }
 
