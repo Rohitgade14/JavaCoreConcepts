@@ -13,7 +13,6 @@ public class Singletone1 {
 		
 	}
     
-    
         public static Singletone1 getInstance() {
         	
         	if(instance==null) {

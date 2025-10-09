@@ -31,11 +31,11 @@ public class FlatMap {
 		      
 		      
 		            // with map by twice this not ideal
-				   // problem with map it will return List<Stream><String>
+				   // problem with map it will return List<Stream><String> -- with ref of Stream
 		          Stream<List<String>> streamResult = skillSets.stream()
 		        		     .map(skills-> skills.stream()
 		            		.collect(Collectors.toList()));
-		            System.err.println(streamResult);
+		            System.err.println(streamResult); 
 		            
 		            
 		            
@@ -44,7 +44,8 @@ public class FlatMap {
 		             .map(skill -> skill.stream()
 		             .collect(Collectors.toList()))
 		             .collect(Collectors.toList());
-		             System.out.println(result);
+		             System.out.println(result);   // it will retrun same resultig
+		           
 		            
 		             
 		            
